@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('images/maxim-hopman-fiXLQXAhCfk-unsplash.jpeg');
+    background-position: center;
+    background-size: cover;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(164deg, rgba(2,0,36,1) 0%, rgba(6,6,138,1) 37%, rgba(0,212,255,1) 100%); */
+} 
+
+h1 {
+    color: white;
+    font-size: 47px;
+    
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    background: rgb(131,58,180);
+    background: linear-gradient(142deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 68%, rgba(252,176,69,1) 100%);
+    border-radius: 20px;
+    width: 40em;
+    height: 35em;
+   margin-bottom: 5em;
+    padding-bottom: 30px;
+    border-radius: 50px;
+    /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; */
+}
+
+#container div {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+#result {
+    background-color: white;
+    width: 15em;
+    height: 5em;
+    border-radius: 30px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+
+#devise1, #devise2, #input {
+    border-radius: 25px;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+
+}
+#input{
+    text-align: center;
+}
+
+#btn-convert {
+    background-color: #00b4d8;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+#btn-convert:hover {
+    cursor: pointer;
+    background-color:#283845;
+    border: 2px solid white;
+}
+
+#input-container {
+    height: 60px;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 25px;
+    width: 60%;
+    height: 70px;
+    
+}
+
+#convert-text {
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+}
