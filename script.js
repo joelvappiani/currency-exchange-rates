@@ -1,3 +1,25 @@
+let currenciesArr = []
+fetch('https://v6.exchangerate-api.com/v6/995411cca5f4f6eebefc3b20/latest/USD')
+.then(response => response.json())
+.then(data => {
+
+    
+    for (let cur in data.conversion_rates){
+        currenciesArr.push(cur)
+    }
+    for (let cur of currenciesArr){
+        document.querySelector('#devise1').innerHTML += `
+        <option value="${cur}">${cur}</option>
+        `
+        document.querySelector('#devise2').innerHTML += `
+        <option value="${cur}">${cur}</option>
+        `
+
+    }
+return data
+})
+
+
 
 document.querySelector('#btn-convert').addEventListener('click', ()=> {
     const devise1 = document.querySelector('#devise1').value
